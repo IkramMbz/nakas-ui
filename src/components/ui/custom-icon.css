@@ -1,0 +1,17 @@
+.nakas-custom-icon {
+  align-items: center;
+  aspect-ratio: 1;
+  box-shadow: inset 0 4px 4px rgba(255, 255, 255, 0.25), 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
+  display: inline-flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.icon-rotate-left {
+  transform: rotate(-15deg);
+}
+
+.icon-rotate-right {
+  transform: rotate(15deg);
+}

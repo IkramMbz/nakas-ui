@@ -1,0 +1,64 @@
+{
+    "name": "Ocean",
+    "author": "Ikram Mbechezi",
+    "authorUrl": "https://github.com/ikrammbz",
+    "light": {
+        "colors": {
+            "primary-accent": "#0ea5e9",
+            "secondary-accent": "#06b6d4",
+            "background": "#f0f9ff",
+            "nega-background": "#0c4a6e",
+            "bold-color": "#0c4a6e",
+            "nega-bold-color": "#f0f9ff",
+            "primary-color": "#075985",
+            "nega-primary-color": "#bae6fd",
+            "secondary-color": "#0369a1",
+            "nega-secondary-color": "#7dd3fc"
+        }
+    },
+    "dark": {
+        "colors": {
+            "primary-accent": "#22d3ee",
+            "secondary-accent": "#06b6d4",
+            "background": "#0c4a6e",
+            "nega-background": "#f0f9ff",
+            "bold-color": "#f0f9ff",
+            "nega-bold-color": "#0c4a6e",
+            "primary-color": "#bae6fd",
+            "nega-primary-color": "#075985",
+            "secondary-color": "#7dd3fc",
+            "nega-secondary-color": "#0369a1"
+        }
+    },
+    "fonts": {
+        "brand": "ClashDisplay",
+        "heading": "Poppins",
+        "body": "Roboto"
+    },
+    "fontProperties": {
+        "brand": {
+            "weight": "600",
+            "style": "normal",
+            "display": "swap"
+        },
+        "heading": {
+            "weight": "700",
+            "style": "normal",
+            "display": "swap"
+        },
+        "body": {
+            "weight": "400",
+            "style": "normal",
+            "display": "swap"
+        }
+    },
+    "borderRadius": "16px",
+    "spacing": "4px",
+    "breakpoints": {
+        "sm": "40rem",
+        "md": "48rem",
+        "lg": "64rem",
+        "xl": "80rem",
+        "2xl": "96rem"
+    }
+}

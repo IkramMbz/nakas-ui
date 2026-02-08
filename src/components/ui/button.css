@@ -1,0 +1,73 @@
+.nakas-button {
+  align-items: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: color-mix(in srgb, var(--color-primary-color) 10%, transparent);
+  box-shadow: inset -4px 4px 4px rgba(var(--color-primary-color), 0.15);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  display: inline-flex;
+  gap: 0.5rem;
+  justify-content: center;
+  transition: all 60ms ease;
+  white-space: nowrap;
+}
+
+.nakas-button:hover {
+  transform: scale(0.99);
+}
+
+/* Button sizes */
+
+.button-xs {
+  height: 2rem;
+  padding-inline: 0.75rem;
+}
+
+.button-sm {
+  height: 2.5rem;
+  padding-inline: 1rem;
+}
+
+.button-md {
+  height: 3rem;
+  padding-inline: 1.5rem;
+}
+
+.button-lg {
+  height: 3.5rem;
+  padding-inline: 2rem;
+}
+
+.button-xl {
+  height: 4rem;
+  padding-inline: 2.5rem;
+}
+
+/* Button variants */
+
+.button-default {
+  background-color: var(--color-primary-color);
+  color: var(--color-nega-bold-color);
+}
+
+.button-negative {
+  background-color: var(--color-nega-primary-color);
+  color: var(--color-bold-color);
+}
+
+.button-primary {
+  background-color: var(--color-accent);
+  color: var(--color-nega-bold-color);
+}
+
+.button-secondary {
+  background-color: var(--color-secondary-accent);
+  color: var(--color-bold-color);
+}
+
+.button-outline {
+  background-color: var(--color-background);
+  border-color: var(--color-accent);
+  color: var(--color-primary-color);
+}

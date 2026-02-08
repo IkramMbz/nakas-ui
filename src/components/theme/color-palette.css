@@ -1,0 +1,46 @@
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.color-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.color-swatch {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--color-secondary-color);
+    cursor: pointer;
+    transition: transform 60ms ease;
+}
+
+.color-swatch:hover {
+    transform: scale(0.99);
+}
+
+.color-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.color-name {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-primary-color);
+    margin: 0;
+}
+
+.color-value {
+    font-size: 0.875rem;
+    color: var(--color-primary-color);
+    margin: 0;
+}

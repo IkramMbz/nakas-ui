@@ -1,0 +1,41 @@
+.dropdown-menu {
+    top: 3rem;
+}
+.dropdown-icon {
+    transition: transform 300ms ease;
+    flex-shrink: 0;
+}
+
+.dropdown-icon-open {
+    transform: rotate(-180deg);
+}
+
+.dropdown-item {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    transition: all 150ms ease;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: color-mix(in srgb, var(--color-accent) 10%, transparent);
+    color: var(--color-bold-color);
+}
+
+.dropdown-item-selected {
+    background-color: color-mix(in srgb, var(--color-accent) 20%, transparent);
+    font-weight: 600;
+}
+
+.dropdown-item-first {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.dropdown-item-last {
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}

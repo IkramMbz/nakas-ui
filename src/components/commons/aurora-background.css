@@ -1,0 +1,82 @@
+:root {
+    --aurora: repeating-linear-gradient(100deg,
+            var(--color-nega-primary-color) 5%,
+            var(--color-accent) 5%,
+            var(--color-secondary-accent) 20%);
+}
+
+.nakas-aurora-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+.nakas-aurora-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--color-accent);
+    filter: blur(10px);
+    inset: 0;
+    left: 0;
+    mix-blend-mode: screen;
+    pointer-events: none;
+    top: 0;
+    transform: translateZ(0);
+    will-change: opacity, transform;
+    z-index: -2;
+}
+
+.nakas-aurora {
+    background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(120, 119, 198, 0.3), transparent 50%), radial-gradient(ellipse 60% 50% at 80% 10%, rgba(221, 214, 254, 0.2), transparent 50%);
+    filter: blur(10px);
+    inset: -15px;
+    mix-blend-mode: screen;
+    opacity: 0.8;
+    pointer-events: none;
+    position: absolute;
+    transform: translateZ(0);
+    will-change: opacity, transform;
+}
+
+.nakas-aurora::after {
+    animation: aurora 60s linear infinite;
+    content: '';
+    inset: 0;
+    background-image: var(--aurora);
+    background-size: 200% 100%;
+    mix-blend-mode: screen;
+    pointer-events: none;
+    position: absolute;
+    transform: translateZ(0);
+    will-change: transform, background-position;
+}
+
+.nakas-aurora::before {
+    animation: auroraShift 60s linear infinite;
+}
+
+.nakas-aurora::after {
+    animation: auroraShift 80s linear infinite reverse;
+}
+
+@keyframes auroraShift {
+    0% {
+        transform: translateX(-30%) translateY(0) scale(1) translateZ(0);
+    }
+
+    50% {
+        transform: translateX(30%) translateY(10%) scale(1.05) translateZ(0);
+    }
+
+    100% {
+        transform: translateX(-30%) translateY(0) scale(1) translateZ(0);
+    }
+}

@@ -1,0 +1,74 @@
+{
+  "name": "nakas-ui",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Reusable UI components and utilities to build consistent and beautiful interfaces",
+  "keywords": [
+    "accessibility",
+    "components",
+    "customization",
+    "design-system",
+    "frontend",
+    "interface",
+    "javascript",
+    "reusable",
+    "theme",
+    "UI"
+  ],
+  "license": "MIT",
+  "author": "Ikram Mbechezi",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./components/*": {
+      "types": "./dist/components/*.d.ts",
+      "import": "./dist/components/*.js",
+      "default": "./dist/components/*.js"
+    },
+    "./lib/*": {
+      "types": "./dist/lib/*.d.ts",
+      "import": "./dist/lib/*.js",
+      "default": "./dist/lib/*.js"
+    },
+    "./dist/*": {
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js",
+      "default": "./dist/*.js"
+    }
+  },
+  "scripts": {
+    "build:css": "rimraf dist/styles && esbuild src/styles/index.css --bundle --minify --outfile=dist/styles/nakas-ui.css",
+    "clean": "rimraf dist",
+    "build": "pnpm run clean && tsc && pnpm run build:css",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/react": "^19.2.11",
+    "@types/react-dom": "^19.2.3",
+    "esbuild": "^0.27.3",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^17.3.0",
+    "prettier": "^3.8.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "rimraf": "^5.0.10",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.54.0"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.31.0",
+    "lucide-react": "^0.563.0"
+  }
+}

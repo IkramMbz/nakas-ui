@@ -1,0 +1,58 @@
+.nakas-section {
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.section-flex-col,
+.section-flex-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.section-flex-col .section-title-description {
+    margin: 0 auto;
+}
+
+.section-flex-col {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-grid {
+    display: grid;
+}
+
+.section-first {
+    margin-top: 2rem;
+}
+
+.section-fullwidth {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .nakas-section {
+        gap: 4rem;
+        padding: 4rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .nakas-section {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .section-first {
+        margin-top: 4rem;
+    }
+}

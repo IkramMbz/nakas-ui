@@ -1,0 +1,64 @@
+{
+    "name": "Saturne",
+    "author": "Ikram Mbechezi",
+    "authorUrl": "https://github.com/ikrammbz",
+    "light": {
+        "colors": {
+            "primary-accent": "#e7c36f",
+            "secondary-accent": "#ffe59a",
+            "background": "#fef9f2",
+            "nega-background": "#1f1b18",
+            "bold-color": "#000000",
+            "nega-bold-color": "#ffffff",
+            "primary-color": "#3b312b",
+            "nega-primary-color": "#e2d8d2",
+            "secondary-color": "#5c4c45",
+            "nega-secondary-color": "#c7bfb9"
+        }
+    },
+    "dark": {
+        "colors": {
+            "primary-accent": "#fffa94",
+            "secondary-accent": "#94afff",
+            "background": "#181818",
+            "nega-background": "#f8f8f8",
+            "bold-color": "#ffffff",
+            "nega-bold-color": "#000000",
+            "primary-color": "#e6e6e6",
+            "nega-primary-color": "#212121",
+            "secondary-color": "#c4c4c4",
+            "nega-secondary-color": "#363636"
+        }
+    },
+    "fonts": {
+        "brand": "ClashDisplay",
+        "heading": "Poppins",
+        "body": "Arial"
+    },
+    "fontProperties": {
+        "brand": {
+            "weight": "600",
+            "style": "normal",
+            "display": "swap"
+        },
+        "heading": {
+            "weight": "700",
+            "style": "normal",
+            "display": "swap"
+        },
+        "body": {
+            "weight": "400",
+            "style": "normal",
+            "display": "swap"
+        }
+    },
+    "borderRadius": "32px",
+    "spacing": "4px",
+    "breakpoints": {
+        "sm": "40rem",
+        "md": "48rem",
+        "lg": "64rem",
+        "xl": "80rem",
+        "2xl": "96rem"
+    }
+}

@@ -1,0 +1,41 @@
+.theme-switcher {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.theme-switcher-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    border: 2px solid color-mix(in srgb, var(--color-bold-color) 10%, transparent);
+    transition: all 150ms ease;
+    cursor: pointer;
+    background-color: var(--color-nega-bold-color);
+    color: var(--color-primary-color);
+    min-width: 150px;
+}
+
+.theme-switcher-button:hover {
+    opacity: 0.9;
+    transform: scale(0.99);
+}
+
+.theme-switcher-button-active {
+    background-color: var(--color-primary-accent);
+    color: var(--color-nega-bold-color);
+    border-color: var(--color-primary-accent);
+}
+
+.theme-switcher-button-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.theme-switcher-button-name {
+    font-weight: 500;
+}

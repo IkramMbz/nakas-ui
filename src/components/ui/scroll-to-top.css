@@ -1,0 +1,45 @@
+.nakas-scroll-to-top-button {
+    align-items: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: color-mix(in srgb, var(--color-primary-color) 10%, transparent);
+    box-shadow: inset -4px 4px 4px rgba(var(--color-primary-color), 0.15);
+    border-radius: var(--border-radius);
+    bottom: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    right: 1rem;
+    transition: all 150ms ease;
+    white-space: nowrap;
+}
+
+.nakas-scroll-to-top-button:hover {
+    transform: scale(0.99);
+}
+
+.nakas-stt-button-xs {
+    width: 2rem;
+    height: 2rem;
+}
+
+.nakas-stt-button-sm {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.nakas-stt-button-md {
+    width: 3rem;
+    height: 3rem;
+}
+
+.nakas-stt-button-lg {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.nakas-stt-button-xl {
+    width: 4rem;
+    height: 4rem;
+}

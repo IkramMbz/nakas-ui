@@ -1,0 +1,35 @@
+.select-value {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.select-icon {
+    transition: transform 300ms ease;
+    flex-shrink: 0;
+}
+
+.select-icon-open {
+    transform: rotate(-180deg);
+}
+
+.select-item {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    transition: all 150ms ease;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-primary-color);
+}
+
+.select-item:hover {
+    background-color: color-mix(in srgb, var(--color-accent) 10%, transparent);
+    color: var(--color-bold-color);
+}
+
+.select-item-selected {
+    background-color: color-mix(in srgb, var(--color-accent) 20%, transparent);
+    font-weight: 600;
+}

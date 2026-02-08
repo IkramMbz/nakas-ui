@@ -1,0 +1,54 @@
+export const ELEMENT_SIZES = ["xs", "sm", "md", "lg", "xl"] as const;
+
+export type ElementSize = (typeof ELEMENT_SIZES)[number];
+
+export type ThemeMode = "light" | "dark";
+
+interface ThemeAttribut {
+  colors: {
+    "primary-accent": string;
+    "secondary-accent": string;
+    background: string;
+    "nega-background": string;
+    "bold-color": string;
+    "primary-color": string;
+    "secondary-color": string;
+    "nega-bold-color": string;
+    "nega-primary-color": string;
+    "nega-secondary-color": string;
+  };
+}
+
+export interface Theme {
+  name: string;
+  author: string;
+  authorUrl: string;
+  light: ThemeAttribut;
+  dark: ThemeAttribut;
+  fonts: {
+    body: string;
+    heading: string;
+  };
+  fontProperties: {
+    body: {
+      weight: string;
+      style: string;
+      display: string;
+    };
+    heading: {
+      weight: string;
+      style: string;
+      display: string;
+    };
+    sizeMultiplier: number;
+  };
+  borderRadius: string;
+  spacing: string;
+  breakpoints: {
+    sm: string;
+    md: string;
+    lg: string;
+    xl: string;
+    "2xl": string;
+  };
+}
