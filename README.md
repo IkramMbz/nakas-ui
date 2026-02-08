@@ -8,16 +8,12 @@
 
 For more details, see the full documentation: [https://ui.nakas.fr](https://ui.nakas.fr)
 
----
-
 ## Table of Contents
 - [Key Features](#key-features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-
----
 
 ## Key Features
 - Reusable and modular UI components  
@@ -29,8 +25,6 @@ For more details, see the full documentation: [https://ui.nakas.fr](https://ui.n
 - Detailed documentation and examples  
 
 For more details, see the full documentation: [https://ui.nakas.fr](https://ui.nakas.fr)
-
----
 
 ## Installation
 
@@ -50,8 +44,6 @@ Then install the library directly from GitHub (since it's not yet published on n
 npm install https://github.com/IkramMbz/nakas-ui
 ```
 
----
-
 ## Usage
 
 Import components into your React/Next project like :
@@ -64,13 +56,9 @@ export default function App() {
 }
 ```
 
----
-
 ## Contributing
 
 All components and features are under active development and may change. External contributions are not open at this time, but we plan to welcome community contributions in the future.  
-
----
 
 ## License
 
