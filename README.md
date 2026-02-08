@@ -1,6 +1,8 @@
+![](/assets/media/img/logo.png)
+
 # Nakas UI
 
-![Release v0.1.0](https://img.shields.io/badge/release-v0.1.0-white) ![Nakas Suite](https://img.shields.io/badge/nakas-suite-9b6cff) ![Node.js](https://img.shields.io/badge/nodejs-18+-339933) ![TypeScript](https://img.shields.io/badge/typescript-5+-blue) ![Frontend](https://img.shields.io/badge/frontend-next.js-000) ![Frontend](https://img.shields.io/badge/frontend-react-61dafb) ![Design System](https://img.shields.io/badge/design--system-9b6cff) ![Customization](https://img.shields.io/badge/customization-e89c3f) ![Accessibility](https://img.shields.io/badge/accessibility-4caf50)
+[![Release v0.1.0](https://img.shields.io/badge/release-v0.1.0-white)](https://github.com/IkramMbz/nakas-ui/blob/main/README.md#installation) [![Nakas Suite](assets/media/img/nakas-suite.svg)](https://mbechezi.fr/#nakas-suite) [![Node.js](assets/media/img/nodejs.svg)](https://nodejs.org/) [![TypeScript](assets/media/img/typescript.svg)](https://www.typescriptlang.org/) [![Frontend Next](assets/media/img/nextjs.svg)](https://nextjs.org/) [![Frontend React](assets/media/img/react.svg)](https://reactjs.org/) [![Design System](assets/media/img/design-system.svg)](https://ui.nakas.fr/) [![Accessibility](assets/media/img/accessibility.svg)](https://www.w3.org/WAI/)
 
 **Nakas UI** is a lightweight UI library for building consistent, accessible, and themeable interfaces aligned with the Nakas design system.
 
