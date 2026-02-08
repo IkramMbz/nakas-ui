@@ -20,7 +20,7 @@ export const ToastItem = ({ toast }: ToastItemProps): React.ReactElement => {
     }, 300);
   };
 
-  const getIcon = (): React.ReactNode => {
+  const getIcon = (): React.ReactElement | null => {
     switch (toast.type) {
       case "success":
         return <CheckCircle className="toast-icon toast-icon-success" />;
