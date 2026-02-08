@@ -1,14 +1,14 @@
 import BodyText from "../typography/body-text.js";
 import { Theme } from "../../types.js";
 
-interface VisibleTheme {
+type VisibleTheme = {
   theme: Theme;
   position: number;
-}
+};
 
-interface LandingDemoKPIProps {
+type LandingDemoKPIProps = {
   themes: VisibleTheme[];
-}
+};
 
 const LandingDemoKPI = ({
   themes,

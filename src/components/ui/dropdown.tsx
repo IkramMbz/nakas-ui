@@ -3,7 +3,7 @@ import { ChevronDown } from "lucide-react";
 import { useState, useRef, useEffect, ReactNode } from "react";
 import { ElementSize } from "src/types.js";
 
-interface DropdownProps<T> {
+type DropdownProps<T> = {
   label: ReactNode;
   items: T[];
   size?: ElementSize;
@@ -12,7 +12,7 @@ interface DropdownProps<T> {
   renderItem?: (item: T, index: number, isSelected: boolean) => ReactNode;
   getItemKey: (item: T) => string;
   className?: string;
-}
+};
 
 const Dropdown = <T,>({
   label,
@@ -80,7 +80,7 @@ const Dropdown = <T,>({
       </button>
 
       {open && (
-        <div className="nakas-dropdown dropdown-menu">
+        <div className="nakas-dropdown">
           {items.map((item, index) => {
             const key = getItemKey(item);
             const isSelected = selectedItemKey === key;

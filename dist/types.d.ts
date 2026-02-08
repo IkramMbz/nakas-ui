@@ -1,7 +1,7 @@
 export declare const ELEMENT_SIZES: readonly ["xs", "sm", "md", "lg", "xl"];
 export type ElementSize = (typeof ELEMENT_SIZES)[number];
 export type ThemeMode = "light" | "dark";
-interface ThemeAttribut {
+type ThemeAttribut = {
     colors: {
         "primary-accent": string;
         "secondary-accent": string;
@@ -14,8 +14,8 @@ interface ThemeAttribut {
         "nega-primary-color": string;
         "nega-secondary-color": string;
     };
-}
-export interface Theme {
+};
+export type Theme = {
     name: string;
     author: string;
     authorUrl: string;
@@ -47,6 +47,6 @@ export interface Theme {
         xl: string;
         "2xl": string;
     };
-}
+};
 export {};
 //# sourceMappingURL=types.d.ts.map

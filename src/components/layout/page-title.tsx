@@ -3,11 +3,11 @@ import { ElementSize } from "src/types.js";
 import BodyText from "../typography/body-text.js";
 import Heading from "../typography/heading.js";
 
-interface PageTitleProps {
+type PageTitleProps = {
   title: string;
   subtitle?: string;
   size?: ElementSize;
-}
+};
 
 const PageTitle = ({
   title,

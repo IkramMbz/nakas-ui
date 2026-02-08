@@ -5,15 +5,15 @@ import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { ElementSize } from "src/types.js";
 
-interface Faq {
+type Faq = {
   question: string;
   answer: string;
-}
+};
 
-interface FaqSectionProps {
+type FaqSectionProps = {
   faqs: Faq[];
   size?: ElementSize;
-}
+};
 
 const FaqSection = ({
   faqs,

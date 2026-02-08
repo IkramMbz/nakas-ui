@@ -1,5 +1,5 @@
 export type DialogVariant = "default" | "danger" | "success" | "warning";
-export interface DialogConfig {
+export type DialogConfig = {
     id: string;
     title: string;
     description?: string;
@@ -11,8 +11,8 @@ export interface DialogConfig {
     onCancel?: () => void;
     variant?: DialogVariant;
     className?: string;
-}
-export interface DialogOpenProps {
+};
+export type DialogOpenProps = {
     title: string;
     description?: string;
     icon?: React.ReactNode;
@@ -22,18 +22,18 @@ export interface DialogOpenProps {
     onCancel?: () => void;
     variant?: DialogVariant;
     className?: string;
-}
-export interface DialogCustomProps {
+};
+export type DialogCustomProps = {
     title: string;
     content: React.ReactNode;
     icon?: React.ReactNode;
     variant?: DialogVariant;
     onCancel?: () => void;
     className?: string;
-}
-export interface DialogContextType {
+};
+export type DialogContextType = {
     dialogs: DialogConfig[];
     openDialog: (config: Omit<DialogConfig, "id">) => string;
     closeDialog: (id?: string) => void;
-}
+};
 //# sourceMappingURL=types.d.ts.map

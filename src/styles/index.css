@@ -1,6 +1,7 @@
 @import "../components/commons/aurora-background.css";
 @import "../components/ui/button.css";
 @import "../components/ui/card.css";
+@import "../components/theme/color-palette.css";
 @import "../components/ui/custom-icon.css";
 @import "../components/ui/dropdown.css";
 @import "../components/dialog/dialog.css";

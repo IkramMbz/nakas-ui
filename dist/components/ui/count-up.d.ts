@@ -1,4 +1,4 @@
-interface CountUpProps {
+type CountUpProps = {
     to: number;
     from?: number;
     direction?: "up" | "down";
@@ -9,7 +9,7 @@ interface CountUpProps {
     separator?: string;
     onStart?: () => void;
     onEnd?: () => void;
-}
+};
 declare const CountUp: ({ to, from, direction, delay, duration, className, startWhen, separator, onStart, onEnd, }: CountUpProps) => React.ReactElement;
 export default CountUp;
 //# sourceMappingURL=count-up.d.ts.map

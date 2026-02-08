@@ -3,13 +3,13 @@
 import clsx from "clsx";
 import { motion } from "framer-motion";
 
-interface TextLinkProps {
+type TextLinkProps = {
   children: React.ReactNode;
   href: string;
   className?: string;
   external?: boolean;
   animated?: boolean;
-}
+};
 
 const TextLink = ({
   children,

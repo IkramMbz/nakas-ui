@@ -14,7 +14,7 @@ const defaultSizeByType: Record<HeadingType, ElementSize> = {
   h4: "sm",
 };
 
-interface HeadingBaseProps {
+type HeadingBaseProps = {
   children: React.ReactNode;
   className?: string;
   type?: HeadingType;
@@ -22,7 +22,7 @@ interface HeadingBaseProps {
   animated?: boolean;
   fullWidth?: boolean;
   size?: ElementSize;
-}
+};
 
 type HeadingProps =
   | (HeadingBaseProps &

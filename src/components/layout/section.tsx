@@ -3,7 +3,7 @@
 import clsx from "clsx";
 import { motion } from "framer-motion";
 
-export interface SectionProps {
+type SectionProps = {
   children: React.ReactNode;
   fullwidth?: boolean;
   className?: string;
@@ -11,7 +11,7 @@ export interface SectionProps {
   firstSection?: boolean;
   flexDirection?: "row" | "column";
   animated?: boolean;
-}
+};
 
 const Section = ({
   children,
@@ -30,9 +30,11 @@ const Section = ({
   const baseClassName = clsx(
     "nakas-section",
     firstSection && "section-first",
-    displayGrid
-      ? "section-grid"
-      : flexDirection === "column" && "section-flex-col",
+    !displayGrid
+      ? flexDirection === "column"
+        ? "section-flex-col"
+        : "flex"
+      : "section-grid",
     fullwidth && "section-fullwidth",
     className
   );

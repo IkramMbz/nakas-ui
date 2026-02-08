@@ -1,6 +1,6 @@
 import { ElementSize } from "src/types.js";
 type ButtonVariant = "default" | "negative" | "primary" | "secondary" | "outline";
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export type ButtonProps = {
     children: React.ReactNode;
     variant?: ButtonVariant;
     size?: ElementSize;
@@ -9,7 +9,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
     color?: string;
     loading?: boolean;
     fullWidth?: boolean;
-}
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
 declare const Button: ({ children, variant, size, className, backgroundColor, color, loading, fullWidth, ...props }: ButtonProps) => React.ReactElement;
 export default Button;
 //# sourceMappingURL=button.d.ts.map

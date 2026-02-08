@@ -17,11 +17,11 @@ import Header from "./header.js";
 
 const DISPLAY_COUNT = 5;
 
-interface VisibleTheme {
+type VisibleTheme = {
   theme: Theme;
   position: number;
   isCurrent: boolean;
-}
+};
 
 const HomePage = (): React.ReactElement | null => {
   const context = useContext(ThemeContext);
@@ -72,8 +72,8 @@ const HomePage = (): React.ReactElement | null => {
   // };
 
   return (
-    <div className="nakas-ui-landing">
-      <AuroraBackground showRadialGradient lowOpacity className="shimmer" />
+    <div className="nakas-ui-landing shimmer">
+      <AuroraBackground showRadialGradient lowOpacity />
 
       <div className="screen">
         <div className="inner" style={{ backgroundColor: colors.background }}>
@@ -91,7 +91,7 @@ const HomePage = (): React.ReactElement | null => {
               <LandingDemoKPI themes={visibleThemes.slice(0, 3)} />
 
               <div
-                className="flex-col items-center justify-center"
+                className="flex flex-col items-center justify-center"
                 style={{ gap: "2rem" }}
               >
                 <div className="header">

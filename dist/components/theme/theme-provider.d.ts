@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Theme } from "../../types.js";
-export interface ThemeContextType {
+type ThemeContextType = {
     currentTheme: Theme;
     currentMode: "light" | "dark" | "system";
     effectiveMode: "light" | "dark";
@@ -9,13 +9,13 @@ export interface ThemeContextType {
     setMode: (mode: "light" | "dark" | "system") => void;
     getAllThemes: () => Record<string, Theme>;
     isHydrated: boolean;
-}
-interface ThemeProviderProps {
+};
+type ThemeProviderProps = {
     children: ReactNode;
     appPrefix: string;
     initialTheme: Theme;
     availableThemes?: Record<string, Theme>;
-}
+};
 export declare const ThemeContext: import("react").Context<ThemeContextType | null>;
 export declare function ThemeProvider({ children, appPrefix, initialTheme, availableThemes, }: ThemeProviderProps): React.ReactElement;
 export {};

@@ -4,7 +4,7 @@ import clsx from "clsx";
 import { motion } from "framer-motion";
 import { ElementSize } from "src/types.js";
 
-interface BodyTextBaseProps {
+type BodyTextBaseProps = {
   children: React.ReactNode;
   className?: string;
   size?: ElementSize;
@@ -12,7 +12,7 @@ interface BodyTextBaseProps {
   color?: string;
   animated?: boolean;
   fullWidth?: boolean;
-}
+};
 
 type BodyTextProps =
   | (BodyTextBaseProps &

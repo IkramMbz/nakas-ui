@@ -6,11 +6,11 @@ import { ElementSize } from "src/types.js";
 
 const SCROLL_TOP_OFFSET = 256;
 
-interface ScrollToTopProps {
+type ScrollToTopProps = {
   children?: ReactNode;
   className?: string;
   size?: ElementSize;
-}
+};
 
 const ScrollToTop = ({
   children,

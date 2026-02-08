@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import BodyText from "../typography/body-text.js";
 import TextLink from "../typography/text-link.js";
 
-export interface SectionTitleProps {
+type SectionTitleProps = {
   children: React.ReactNode;
   className?: string;
   description?: string;
@@ -15,7 +15,7 @@ export interface SectionTitleProps {
   buttonLabel?: string;
   buttonHref?: string;
   appIcon?: React.ReactNode;
-}
+};
 
 const SectionTitle = ({
   children,

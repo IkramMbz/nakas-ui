@@ -7,10 +7,10 @@ import BodyText from "../typography/body-text.js";
 import { ThemeContext } from "./theme-provider.js";
 import Toggler from "../ui/toggler.js";
 
-interface ThemeDemoWrapperProps {
+type ThemeDemoWrapperProps = {
   label: string;
   children?: React.ReactNode;
-}
+};
 
 function ThemeDemoWrapper({
   label,

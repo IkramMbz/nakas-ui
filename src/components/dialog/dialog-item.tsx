@@ -7,9 +7,9 @@ import { useState, useEffect } from "react";
 import { useDialogContext } from "./dialog-context.js";
 import { DialogConfig } from "./types.js";
 
-interface DialogItemProps {
+type DialogItemProps = {
   dialog: DialogConfig;
-}
+};
 
 export const DialogItem = ({ dialog }: DialogItemProps): React.ReactElement => {
   const { closeDialog } = useDialogContext();

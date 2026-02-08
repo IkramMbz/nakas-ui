@@ -1,5 +1,5 @@
 import { ElementSize } from "src/types.js";
-interface BodyTextBaseProps {
+type BodyTextBaseProps = {
     children: React.ReactNode;
     className?: string;
     size?: ElementSize;
@@ -7,7 +7,7 @@ interface BodyTextBaseProps {
     color?: string;
     animated?: boolean;
     fullWidth?: boolean;
-}
+};
 type BodyTextProps = (BodyTextBaseProps & React.HTMLAttributes<HTMLParagraphElement> & {
     type?: "p";
 }) | (BodyTextBaseProps & React.HTMLAttributes<HTMLSpanElement> & {

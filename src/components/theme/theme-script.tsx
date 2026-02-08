@@ -5,12 +5,12 @@ import {
   generateFontStyleLinks,
 } from "../../lib/theme-ssr.js";
 
-interface ThemeScriptProps {
+type ThemeScriptProps = {
   theme: Theme;
   mode?: ThemeMode;
   nonce?: string;
   appPrefix: string;
-}
+};
 
 export function ThemeScript({
   theme,

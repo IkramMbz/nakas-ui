@@ -1,12 +1,12 @@
 import clsx from "clsx";
 
-interface AuroraBackgroundProps {
+type AuroraBackgroundProps = {
   children?: React.ReactNode;
   lowOpacity?: boolean;
   className?: string;
   flexDirection?: "row" | "column";
   showRadialGradient?: boolean;
-}
+};
 
 const AuroraBackground = ({
   children,

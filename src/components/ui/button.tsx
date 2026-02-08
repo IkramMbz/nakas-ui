@@ -9,7 +9,7 @@ type ButtonVariant =
   | "secondary"
   | "outline";
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export type ButtonProps = {
   children: React.ReactNode;
   variant?: ButtonVariant;
   size?: ElementSize;
@@ -18,7 +18,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   color?: string;
   loading?: boolean;
   fullWidth?: boolean;
-}
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = ({
   children,

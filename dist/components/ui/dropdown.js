@@ -36,7 +36,7 @@ const Dropdown = ({ label, items, size = "md", selectedItemKey, onItemClick, ren
         document.addEventListener("mousedown", handleClickOutside);
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
-    return (_jsxs("div", { className: "flex-col", ref: ref, children: [_jsxs("button", { onClick: toggleOpen, className: clsx("nakas-form-field", `nakas-form-item-${size}`, className), children: [_jsx("span", { children: label }), _jsx(ChevronDown, { size: 16, className: clsx("dropdown-icon", open && "dropdown-icon-open") })] }), open && (_jsx("div", { className: "nakas-dropdown dropdown-menu", children: items.map((item, index) => {
+    return (_jsxs("div", { className: "flex-col", ref: ref, children: [_jsxs("button", { onClick: toggleOpen, className: clsx("nakas-form-field", `nakas-form-item-${size}`, className), children: [_jsx("span", { children: label }), _jsx(ChevronDown, { size: 16, className: clsx("dropdown-icon", open && "dropdown-icon-open") })] }), open && (_jsx("div", { className: "nakas-dropdown", children: items.map((item, index) => {
                     const key = getItemKey(item);
                     const isSelected = selectedItemKey === key;
                     if (renderItem) {

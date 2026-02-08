@@ -2,13 +2,13 @@ import clsx from "clsx";
 import { AlertCircle } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
-interface ErrorBlockProps {
+type ErrorBlockProps = {
   error: string;
   duration?: number;
   className?: string;
   infiniteDuration?: boolean;
   showIcon?: boolean;
-}
+};
 
 const ErrorBlock = ({
   error,

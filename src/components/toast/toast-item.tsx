@@ -5,9 +5,9 @@ import { useState } from "react";
 import { useToastContext } from "./toast-context.js";
 import { Toast } from "./types.js";
 
-interface ToastItemProps {
+type ToastItemProps = {
   toast: Toast;
-}
+};
 
 export const ToastItem = ({ toast }: ToastItemProps): React.ReactElement => {
   const { removeToast } = useToastContext();

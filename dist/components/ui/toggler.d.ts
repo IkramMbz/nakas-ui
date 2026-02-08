@@ -1,4 +1,4 @@
-export interface TogglerProps {
+type TogglerProps = {
     value: boolean;
     onChange: (next: boolean) => void;
     backgroundColor?: string;
@@ -8,7 +8,7 @@ export interface TogglerProps {
     rightIcon?: React.ReactNode;
     thumbClassName?: string;
     trackClassName?: string;
-}
+};
 declare const Toggler: ({ value, onChange, backgroundColor, color, disabled, leftIcon, rightIcon, thumbClassName, trackClassName, }: TogglerProps) => React.ReactElement;
 export default Toggler;
 //# sourceMappingURL=toggler.d.ts.map

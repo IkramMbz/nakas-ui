@@ -3,7 +3,7 @@
 import { createContext, useContext, ReactNode } from "react";
 import { useState, useEffect, useCallback } from "react";
 
-interface UseSidebarLayoutOptions {
+type UseSidebarLayoutOptions = {
   defaultAgentHorizontalDisplay?: boolean;
   defaultOpen?: boolean;
   defaultView?: ViewType;
@@ -11,11 +11,11 @@ interface UseSidebarLayoutOptions {
   sidebarWidth?: number;
   sidebarFullWidth?: number;
   persistState?: boolean;
-}
+};
 
 export type ViewType = "edit" | "overview" | "settings" | "workflow";
 
-export interface UseSidebarLayoutReturn {
+type UseSidebarLayoutReturn = {
   isSidebarOpen: boolean;
   isAgentHorizontalDisplay: boolean;
   headerHeight: number;
@@ -27,7 +27,7 @@ export interface UseSidebarLayoutReturn {
   setSidebarOpen: (value: boolean) => void;
   setAgentHorizontalDisplay: (value: boolean) => void;
   setCurrentView: (view: ViewType) => void;
-}
+};
 
 export function useSidebarLayout(
   options: UseSidebarLayoutOptions = {}
@@ -120,9 +120,9 @@ const LayoutContext = createContext<UseSidebarLayoutReturn | undefined>(
   undefined
 );
 
-interface LayoutProviderProps {
+type LayoutProviderProps = {
   children: ReactNode;
-}
+};
 
 export default function LayoutProvider({
   children,

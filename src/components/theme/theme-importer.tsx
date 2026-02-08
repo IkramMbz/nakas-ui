@@ -6,7 +6,7 @@ import { useContext, useRef } from "react";
 import { ThemeContext } from "./theme-provider.js";
 import { Button } from "../ui/index.js";
 
-// interface ThemeImporterProps {
+// type ThemeImporterProps = {
 //   onImport: (success: boolean) => void;
 // }
 

@@ -3,7 +3,7 @@
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 
-export interface TogglerProps {
+type TogglerProps = {
   value: boolean;
   onChange: (next: boolean) => void;
   backgroundColor?: string;
@@ -13,7 +13,7 @@ export interface TogglerProps {
   rightIcon?: React.ReactNode;
   thumbClassName?: string;
   trackClassName?: string;
-}
+};
 
 const Toggler = ({
   value,

@@ -14,7 +14,7 @@ import { Theme } from "../../types.js";
 import { STORAGE_KEYS } from "../../lib/constants.js";
 import { getCookie, setCookie } from "../../lib/cookies.js";
 
-export interface ThemeContextType {
+type ThemeContextType = {
   currentTheme: Theme;
   currentMode: "light" | "dark" | "system";
   effectiveMode: "light" | "dark";
@@ -23,14 +23,14 @@ export interface ThemeContextType {
   setMode: (mode: "light" | "dark" | "system") => void;
   getAllThemes: () => Record<string, Theme>;
   isHydrated: boolean;
-}
+};
 
-interface ThemeProviderProps {
+type ThemeProviderProps = {
   children: ReactNode;
   appPrefix: string;
   initialTheme: Theme;
   availableThemes?: Record<string, Theme>;
-}
+};
 
 export const ThemeContext = createContext<ThemeContextType | null>(null);
 

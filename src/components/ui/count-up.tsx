@@ -1,7 +1,7 @@
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-interface CountUpProps {
+type CountUpProps = {
   to: number;
   from?: number;
   direction?: "up" | "down";
@@ -12,7 +12,7 @@ interface CountUpProps {
   separator?: string;
   onStart?: () => void;
   onEnd?: () => void;
-}
+};
 
 const CountUp = ({
   to,

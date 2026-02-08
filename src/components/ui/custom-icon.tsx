@@ -1,12 +1,12 @@
 import clsx from "clsx";
 import { LucideIcon } from "lucide-react";
 
-export interface CustomIconProps {
+type CustomIconProps = {
   icon: LucideIcon;
   backgroundColor?: string;
   color?: string;
   direction?: "left" | "right";
-}
+};
 
 const CustomIcon = ({
   icon: Icon,

@@ -1,25 +1,7 @@
 "use client";
-// import Lenis from "lenis";
-// import { useEffect } from "react";
+// Component not used yet
 export default function LenisScroll() {
-    // useEffect(() => {
-    //     const lenis = new Lenis({
-    //         duration: 1.2,
-    //         smoothWheel: true,
-    //         // smoothTouch: false,
-    //         anchors: {
-    //             offset: -100,
-    //         },
-    //     });
-    //     const raf = (time: number) => {
-    //         lenis.raf(time);
-    //         requestAnimationFrame(raf);
-    //     };
-    //     requestAnimationFrame(raf);
-    //     return () => {
-    //         lenis.destroy();
-    //     };
-    // }, []);
+    // TO DO
     return null;
 }
 //# sourceMappingURL=smooth-scroll.js.map

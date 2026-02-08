@@ -1,11 +1,11 @@
 import BodyText from "../typography/body-text.js";
 
-interface NotificationBarProps {
+type NotificationBarProps = {
   backgroundColor: string;
   color: string;
   author: string;
   authorUrl: string | null;
-}
+};
 
 const NotificationBar = ({
   author,
