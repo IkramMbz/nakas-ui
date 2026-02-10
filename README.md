@@ -2,7 +2,7 @@
 
 # Nakas UI
 
-[![Release v0.2.0](https://img.shields.io/badge/release-v0.2.0-white)](https://github.com/IkramMbz/nakas-ui/blob/main/README.md#installation) [![Nakas Suite](assets/media/img/nakas-suite.svg)](https://mbechezi.fr/#nakas-suite) [Nakas Suite](assets/media/img/license-mit.svg)](https://github.com/IkramMbz/nakas-ui/blob/main/LICENSE) [![Node.js](assets/media/img/nodejs.svg)](https://nodejs.org/) [![TypeScript](assets/media/img/typescript.svg)](https://www.typescriptlang.org/) [![Frontend Next](assets/media/img/nextjs.svg)](https://nextjs.org/) [![Frontend React](assets/media/img/react.svg)](https://reactjs.org/) [![Design System](assets/media/img/design-system.svg)](https://ui.nakas.fr/) [![Accessibility](assets/media/img/accessibility.svg)](https://www.w3.org/WAI/)
+[![Release v0.2.0](https://img.shields.io/badge/release-v0.2.0-white)](https://github.com/IkramMbz/nakas-ui/blob/main/README.md#installation) [![Nakas Suite](assets/media/img/nakas-suite.svg)](https://mbechezi.fr/#nakas-suite) [![Nakas Suite](assets/media/img/license-mit.svg)](https://github.com/IkramMbz/nakas-ui/blob/main/LICENSE) [![Node.js](assets/media/img/nodejs.svg)](https://nodejs.org/) [![TypeScript](assets/media/img/typescript.svg)](https://www.typescriptlang.org/) [![Frontend Next](assets/media/img/nextjs.svg)](https://nextjs.org/) [![Frontend React](assets/media/img/react.svg)](https://reactjs.org/) [![Design System](assets/media/img/design-system.svg)](https://ui.nakas.fr/) [![Accessibility](assets/media/img/accessibility.svg)](https://www.w3.org/WAI/)
 
 **Nakas UI** is a lightweight UI library for building consistent, accessible, and themeable interfaces aligned with the Nakas design system.
 
