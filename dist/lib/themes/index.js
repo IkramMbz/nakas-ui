@@ -13,16 +13,20 @@
 // import terre from "./terre.json";
 // import venus from "./venus.json";
 import { aurora } from "./aurora.js";
+import { ceres } from "./ceres.js";
 import { lune } from "./lune.js";
 import { neptune } from "./neptune.js";
 import { mars } from "./mars.js";
-import { jupiter } from "./jupiter.js";
-const defaultTheme = jupiter;
+import { saturne } from "./saturne.js";
+import { venus } from "./venus.js";
+const defaultTheme = ceres;
 export const themes = {
     aurora,
     default: defaultTheme,
     lune,
     mars,
     neptune,
+    saturne,
+    venus,
 };
 //# sourceMappingURL=index.js.map

@@ -47,7 +47,7 @@ export const jupiter = {
         },
         sizeMultiplier: 1,
     },
-    borderRadius: "8px",
+    borderRadius: "16px",
     spacing: "4px",
     breakpoints: {
         sm: "40rem",

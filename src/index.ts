@@ -1,4 +1,4 @@
-import "./styles/nakas-ui.css";
+import "./styles/index.css";
 
 export * from "./components/commons/index.js";
 export * from "./components/dialog/index.js";

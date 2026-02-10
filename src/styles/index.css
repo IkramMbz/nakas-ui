@@ -73,14 +73,6 @@ button {
     user-select: none;
 }
 
-.text-gradient {
-    background: linear-gradient(to bottom right, var(--color-accent), var(--color-secondary-accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
-
 .text-center {
     text-align: center;
 }
@@ -88,8 +80,14 @@ button {
 /* Form */
 
 .nakas-card,
-.nakas-dropdown {
+.nakas-dropdown,
+.nakas-form-field {
     background-color: var(--color-nega-bold-color);
+}
+
+.nakas-card,
+.nakas-dropdown,
+.nakas-toggler {
     border: 1px solid color-mix(in srgb, var(--color-bold-color) 10%, transparent);
     border-radius: var(--border-radius);
     box-shadow: 0 1px 2px color-mix(in srgb, var(--color-bold-color) 10%, transparent);
@@ -111,11 +109,11 @@ button {
     display: flex;
     border-radius: var(--border-radius);
     border: 1px solid color-mix(in srgb, var(--color-primary-color) 55%, transparent);
-    background-color: var(--color-nega-bold-color);
     justify-content: space-between;
     transition: all 150ms ease;
 }
 
+.nakas-form-field,
 .nakas-form-field::placeholder {
     color: color-mix(in srgb, var(--color-primary-color) 50%, transparent);
 }

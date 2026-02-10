@@ -50,8 +50,6 @@ function ThemeDemoWrapper({
           onChange={toggleMode}
           leftIcon={<Sun size={20} className="text-bold-color" />}
           rightIcon={<Moon size={20} className="text-bold-color" />}
-          backgroundColor={colors["nega-background"]}
-          color={colors["nega-bold-color"]}
           trackClassName="bg-accent"
           thumbClassName="bg-nega-bold-color"
         />

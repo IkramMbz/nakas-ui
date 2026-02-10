@@ -2,10 +2,12 @@
 
 import clsx from "clsx";
 import { motion } from "framer-motion";
+import { ElementSize } from "src/types.js";
 
 type TextLinkProps = {
   children: React.ReactNode;
   href: string;
+  size?: ElementSize;
   className?: string;
   external?: boolean;
   animated?: boolean;
@@ -14,6 +16,7 @@ type TextLinkProps = {
 const TextLink = ({
   children,
   href,
+  size = "md",
   className = "",
   external = false,
   animated = false,
@@ -41,7 +44,7 @@ const TextLink = ({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={clsx("nakas-text-link", className)}
+        className={clsx("nakas-text-link", `text-${size}`, className)}
       >
         {children}
       </a>
@@ -52,7 +55,7 @@ const TextLink = ({
     return (
       <motion.a
         href={href}
-        className={clsx("nakas-text-link", className)}
+        className={clsx("nakas-text-link", `text-${size}`, className)}
         initial={{ opacity: 0, y: 8 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -64,7 +67,10 @@ const TextLink = ({
   }
 
   return (
-    <a href={href} className={clsx("nakas-text-link", className)}>
+    <a
+      href={href}
+      className={clsx("nakas-text-link", `text-${size}`, className)}
+    >
       {children}
     </a>
   );

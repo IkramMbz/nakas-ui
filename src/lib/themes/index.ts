@@ -32,12 +32,14 @@
 
 import { Theme } from "../../types.js";
 import { aurora } from "./aurora.js";
+import { ceres } from "./ceres.js";
 import { lune } from "./lune.js";
 import { neptune } from "./neptune.js";
 import { mars } from "./mars.js";
-import { jupiter } from "./jupiter.js";
+import { saturne } from "./saturne.js";
+import { venus } from "./venus.js";
 
-const defaultTheme = jupiter;
+const defaultTheme = ceres;
 
 export const themes: Record<string, Theme> = {
   aurora,
@@ -45,4 +47,6 @@ export const themes: Record<string, Theme> = {
   lune,
   mars,
   neptune,
+  saturne,
+  venus,
 };

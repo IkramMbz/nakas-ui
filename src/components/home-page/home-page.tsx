@@ -72,7 +72,7 @@ const HomePage = (): React.ReactElement | null => {
   // };
 
   return (
-    <div className="nakas-ui-landing shimmer">
+    <div className="nakas-ui-landing">
       <AuroraBackground showRadialGradient lowOpacity />
 
       <div className="screen">
@@ -81,14 +81,14 @@ const HomePage = (): React.ReactElement | null => {
             author={currentTheme.author}
             authorUrl={currentTheme.authorUrl || null}
             backgroundColor={`linear-gradient(to right, ${colors["primary-accent"]}, ${colors["secondary-accent"]})`}
-            color={colors["secondary-accent"]}
+            color={colors["nega-bold-color"]}
           />
 
           <div className="main">
             <Header />
 
             <main id="main-content">
-              <LandingDemoKPI themes={visibleThemes.slice(0, 3)} />
+              <LandingDemoKPI themes={visibleThemes} />
 
               <div
                 className="flex flex-col items-center justify-center"
@@ -109,10 +109,10 @@ const HomePage = (): React.ReactElement | null => {
                       <button
                         className={`planet ${isCurrent ? "big scale-110" : "w-24 h-24 opacity-60 hover:opacity-80"}`}
                         style={{
-                          background: `radial-gradient(circle, ${theme.light.colors["secondary-accent"]}, ${theme.light.colors["primary-accent"]})`,
+                          background: `radial-gradient(circle, ${theme[effectiveMode].colors["secondary-accent"]}, ${theme[effectiveMode].colors["primary-accent"]})`,
                           boxShadow: isCurrent
-                            ? `0px 0px 40px ${theme.light.colors["secondary-accent"]}`
-                            : `0px 0px 20px ${theme.light.colors["secondary-accent"]}`,
+                            ? `0px 0px 40px ${theme[effectiveMode].colors["secondary-accent"]}`
+                            : `0px 0px 20px ${theme[effectiveMode].colors["secondary-accent"]}`,
                         }}
                       />
                     </div>
@@ -121,7 +121,18 @@ const HomePage = (): React.ReactElement | null => {
 
                 <Heading type="h1" animated>
                   Construisez avec le thème{" "}
-                  <span className="text-gradient">{currentTheme.name}</span>
+                  <span
+                    className="text-gradient"
+                    style={{
+                      display: "inline-block",
+                      backgroundImage: `linear-gradient(to bottom right, ${currentTheme[effectiveMode].colors["secondary-accent"]}, ${currentTheme[effectiveMode].colors["primary-accent"]})`,
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                      color: "transparent",
+                    }}
+                  >
+                    {currentTheme.name}
+                  </span>
                 </Heading>
 
                 <BodyText size="xl" className="mb-4">

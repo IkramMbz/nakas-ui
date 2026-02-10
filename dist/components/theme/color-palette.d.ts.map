@@ -1,1 +1,1 @@
-{"version":3,"file":"color-palette.d.ts","sourceRoot":"","sources":["../../../src/components/theme/color-palette.tsx"],"names":[],"mappings":"AAQA,eAAO,MAAM,gBAAgB,GAAI,UAAU,MAAM,KAAG,MAYnD,CAAC;AAEF,QAAA,MAAM,YAAY,QAAO,KAAK,CAAC,YAAY,GAAG,IAsC7C,CAAC;AAEF,eAAe,YAAY,CAAC"}
+{"version":3,"file":"color-palette.d.ts","sourceRoot":"","sources":["../../../src/components/theme/color-palette.tsx"],"names":[],"mappings":"AAuBA,QAAA,MAAM,YAAY,QAAO,KAAK,CAAC,YAAY,GAAG,IA0F7C,CAAC;AAEF,eAAe,YAAY,CAAC"}

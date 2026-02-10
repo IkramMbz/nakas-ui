@@ -48,5 +48,12 @@ export type Theme = {
         "2xl": string;
     };
 };
+export type ColorContrastAuditResult = {
+    ratio: number;
+    AA_NORMAL: boolean;
+    AA_LARGE: boolean;
+    AAA_NORMAL: boolean;
+    AAA_LARGE: boolean;
+};
 export {};
 //# sourceMappingURL=types.d.ts.map

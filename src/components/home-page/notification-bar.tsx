@@ -16,9 +16,9 @@ const NotificationBar = ({
   return (
     <div
       className="notification-bar shimmer"
-      style={{ background: backgroundColor, color: color }}
+      style={{ background: backgroundColor }}
     >
-      <BodyText className="notification-bar-text">
+      <BodyText className="notification-bar-text" color={color}>
         Thème élaboré par{" "}
         {authorUrl ? (
           <a href={authorUrl} target="_blank" rel="noopener noreferrer">

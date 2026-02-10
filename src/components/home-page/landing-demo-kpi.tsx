@@ -17,7 +17,7 @@ const LandingDemoKPI = ({
 
   return (
     <div className="landing-demo-kpi">
-      {themes.map(({ theme, position }, index) => (
+      {themes.slice(0, 3).map(({ theme, position }, index) => (
         <div key={`${theme.name}-${position}`} className="theme-wrapper">
           <div
             className="theme-kpi-button"

@@ -1,62 +1,115 @@
 "use client";
 
 import { Copy } from "lucide-react";
-import { useContext } from "react";
+import { useContext, useCallback, useMemo } from "react";
 
 import { ThemeContext } from "./theme-provider.js";
+import { toast } from "../toast/toast.js";
+import { ToastProvider } from "../toast/toast-provider.js";
 import BodyText from "../typography/body-text.js";
+import ContrastIndicator from "./contrast-indicator.js";
+import {
+  checkContrastText,
+  getContrastColor,
+  hexToRgb,
+} from "../../lib/colors-functions.js";
 
-export const getContrastColor = (hexColor: string): string => {
-  if (!hexColor) return "#000000";
-
-  const color = hexColor.replace("#", "");
-
-  const r = parseInt(color.substring(0, 2), 16);
-  const g = parseInt(color.substring(2, 4), 16);
-  const b = parseInt(color.substring(4, 6), 16);
-
-  const brightness = (r * 299 + g * 587 + b * 114) / 1000;
-
-  return brightness > 125 ? "#000000" : "#ffffff";
-};
+const EXCLUDE_KEYS = [
+  "background",
+  "nega-bold-color",
+  "nega-primary-color",
+  "nega-secondary-color",
+];
 
 const ColorPalette = (): React.ReactElement | null => {
   const context = useContext(ThemeContext);
+
+  const handleCopy = useCallback(async (value: string) => {
+    try {
+      await navigator.clipboard.writeText(value);
+      toast.success({
+        title: "Copié",
+        description: "Code couleur copié dans le presse-papiers",
+      });
+    } catch {
+      toast.error({
+        title: "Erreur",
+        description: "Impossible de copier la couleur",
+      });
+    }
+  }, []);
+
+  const colorEntries = useMemo(() => {
+    if (!context) return [];
+
+    const { effectiveMode, currentTheme } = context;
+    const colors = currentTheme[effectiveMode].colors;
+    const bgRgb = hexToRgb(colors["background"]);
+
+    return Object.entries(colors).map(([key, value]) => {
+      const colorRgb = hexToRgb(value);
+      const textColor = getContrastColor(value);
+      const textColorRgb = hexToRgb(textColor);
+
+      return {
+        key,
+        value,
+        bgContrast: checkContrastText(colorRgb, bgRgb), // Couleur vs Background
+        textContrast: checkContrastText(textColorRgb, colorRgb), // Texte vs Couleur
+        textColor,
+        isExcluded: EXCLUDE_KEYS.includes(key),
+      };
+    });
+  }, [context]);
+
   if (!context) return null;
 
-  const { effectiveMode } = context;
-
-  const colors = context.currentTheme[effectiveMode].colors;
+  const primaryColor =
+    context.currentTheme[context.effectiveMode].colors["primary-color"];
 
   return (
-    <div className="color-palette">
-      {Object.entries(colors).map(([key, value]) => (
-        <div key={key} className="color-item">
-          <div
-            className="color-swatch"
-            style={{
-              backgroundColor: value,
-              color: getContrastColor(value),
-            }}
-            onClick={() => navigator.clipboard.writeText(value)}
-            title="Click to copy"
-          >
-            <Copy size={20} />
-            <span>Copy</span>
-          </div>
+    <ToastProvider>
+      <div className="color-palette">
+        {colorEntries.map(
+          ({ key, value, bgContrast, textContrast, textColor, isExcluded }) => (
+            <div key={key} className="color-item">
+              <BodyText size="sm" color={primaryColor} className="key">
+                {key}
+              </BodyText>
 
-          <div className="color-info">
-            <BodyText size="sm" style={{ color: colors["primary-color"] }}>
-              {key}
-            </BodyText>
+              <div
+                className="color-swatch"
+                style={{ backgroundColor: value, color: textColor }}
+                onClick={() => handleCopy(value)}
+                title="Cliquer pour copier"
+              >
+                <Copy size={20} />
+                <span>{value}</span>
+              </div>
 
-            <BodyText size="sm" style={{ color: colors["primary-color"] }}>
-              {value}
-            </BodyText>
-          </div>
-        </div>
-      ))}
-    </div>
+              <div className="color-info">
+                {isExcluded ? (
+                  <BodyText size="sm" color={primaryColor}>
+                    Contrast audit not required
+                  </BodyText>
+                ) : (
+                  <>
+                    <ContrastIndicator
+                      title="Color on Background Contrast Audit:"
+                      contrast={bgContrast}
+                    />
+                    <ContrastIndicator
+                      title="Text on this Color Contrast Audit:"
+                      contrast={textContrast}
+                    />
+                  </>
+                )}
+              </div>
+            </div>
+          )
+        )}
+      </div>
+    </ToastProvider>
   );
 };
 
