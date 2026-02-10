@@ -21,7 +21,7 @@ export const neptune: Theme = {
   dark: {
     colors: {
       "primary-accent": "#82AAFE",
-      "secondary-accent": "#7FB2E6",
+      "secondary-accent": "#268BEF",
       background: "#0F1724",
       "nega-background": "#F5F6FA",
       "bold-color": "#F2F6FF",
