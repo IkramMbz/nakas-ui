@@ -6,9 +6,9 @@ export const neptune: Theme = {
   authorUrl: "https://github.com/ikrammbz",
   light: {
     colors: {
-      "primary-accent": "#0450a7",
-      "secondary-accent": "#2c478a",
-      background: "#F2F6FD",
+      "primary-accent": "#0450A7",
+      "secondary-accent": "#6591FF",
+      background: "#FBFCFF",
       "nega-background": "#141A28",
       "bold-color": "#0F1724",
       "nega-bold-color": "#F9FAFB",
