@@ -49,7 +49,7 @@ export const neptune: Theme = {
     },
     sizeMultiplier: 1,
   },
-  borderRadius: "56px",
+  borderRadius: "32px",
   spacing: "4px",
   breakpoints: {
     sm: "40rem",

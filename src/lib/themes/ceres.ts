@@ -49,7 +49,7 @@ export const ceres: Theme = {
     },
     sizeMultiplier: 1,
   },
-  borderRadius: "16px",
+  borderRadius: "8px",
   spacing: "4px",
   breakpoints: {
     sm: "40rem",
