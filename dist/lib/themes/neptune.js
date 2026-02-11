@@ -4,9 +4,9 @@ export const neptune = {
     authorUrl: "https://github.com/ikrammbz",
     light: {
         colors: {
-            "primary-accent": "#0450a7",
-            "secondary-accent": "#2c478a",
-            background: "#F2F6FD",
+            "primary-accent": "#0450A7",
+            "secondary-accent": "#6591FF",
+            background: "#FBFCFF",
             "nega-background": "#141A28",
             "bold-color": "#0F1724",
             "nega-bold-color": "#F9FAFB",
@@ -19,7 +19,7 @@ export const neptune = {
     dark: {
         colors: {
             "primary-accent": "#82AAFE",
-            "secondary-accent": "#7FB2E6",
+            "secondary-accent": "#268BEF",
             background: "#0F1724",
             "nega-background": "#F5F6FA",
             "bold-color": "#F2F6FF",
