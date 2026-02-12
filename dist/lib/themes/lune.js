@@ -47,7 +47,7 @@ export const lune = {
         },
         sizeMultiplier: 0.85,
     },
-    borderRadius: "16px",
+    borderRadius: "8px",
     spacing: "4px",
     breakpoints: {
         sm: "40rem",
