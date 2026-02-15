@@ -25,20 +25,24 @@ export function generateHydrationScript(defaultTheme, appPrefix) {
       return "light";
     }
 
-    function applyColors(colors, root, body) {
+    function applyColors(colors, root) {
+      var body = document.body;
       Object.entries(colors).forEach(function(entry) {
         root.style.setProperty("--color-" + entry[0], entry[1]);
       });
       root.style.backgroundColor = colors.background;
       root.style.color = colors["primary-color"];
-      body.style.backgroundColor = colors.background;
-      body.style.color = colors["primary-color"];
+      if (body) {
+        body.style.backgroundColor = colors.background;
+        body.style.color = colors["primary-color"];
+      }
     }
 
     var themeCookie = getCookie("${themeCookieName}");
     var modeCookie = getCookie("${modeCookieName}") || "system";
     
     var theme;
+
     try {
       theme = themeCookie ? JSON.parse(themeCookie) : ${defaultThemeJSON};
     } catch (e) {
@@ -48,9 +52,8 @@ export function generateHydrationScript(defaultTheme, appPrefix) {
     var effectiveMode = resolveMode(modeCookie);
     var colors = theme[effectiveMode].colors;
     var root = document.documentElement;
-    var body = document.body;
 
-    applyColors(colors, root, body);
+    applyColors(colors, root);
 
     root.style.setProperty("--font-family-heading", theme.fonts.heading || "Poppins");
     root.style.setProperty("--font-family-body", theme.fonts.body || "Lato");
@@ -78,7 +81,7 @@ export function generateHydrationScript(defaultTheme, appPrefix) {
       mediaQuery.addEventListener("change", function(e) {
         var newMode = e.matches ? "dark" : "light";
         var newColors = theme[newMode].colors;
-        applyColors(newColors, root, body);
+        applyColors(newColors, root);
         root.setAttribute("data-effective-mode", newMode);
       });
     }

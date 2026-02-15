@@ -12,7 +12,6 @@ function applyThemeToDOM(theme, mode) {
     if (typeof window === "undefined")
         return;
     const root = document.documentElement;
-    const body = document.body;
     const colors = theme[mode].colors;
     requestAnimationFrame(() => {
         Object.entries(colors).forEach(([key, value]) => {
@@ -36,8 +35,11 @@ function applyThemeToDOM(theme, mode) {
         // Direct Style on root and body
         root.style.backgroundColor = colors.background;
         root.style.color = colors["primary-color"];
-        body.style.backgroundColor = colors.background;
-        body.style.color = colors["primary-color"];
+        const body = document.body;
+        if (body) {
+            body.style.backgroundColor = colors.background;
+            body.style.color = colors["primary-color"];
+        }
         // Data attributes
         root.setAttribute("data-theme-mode", mode);
         root.setAttribute("data-effective-mode", mode);
