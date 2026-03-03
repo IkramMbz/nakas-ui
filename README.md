@@ -8,11 +8,12 @@
 
 🟣**Note:** Nakas UI is currently in the testing phase and is not yet available on npm. It will be released soon.
 
-For full documentation, examples, and installation guides, see: [Nakas UI Documentation](https://ui.nakas.fr)
+For full documentation, examples, and installation guides, see: [Official Documentation](https://ui.nakas.fr)
 
 ## Table of Contents
 - [Projects and Usage](#projects-and-submodules)
 - [Key Features](#key-features)
+- [Storybook](#storybook)
 - [Installation](#installation)
 - [Contributing](#contributing)
 - [License](#license)
@@ -55,6 +56,23 @@ npm init -y
 Then install the library directly from GitHub (since it's not yet published on npm):
 ```bash
 npm install https://github.com/IkramMbz/nakas-ui
+```
+
+## Storybook
+
+This repository includes the **full Storybook setup**, which documents every component for all supported frameworks (React, Svelte, Vue).  
+
+Storybook can be used to:  
+- **Visualize components interactively** in a local environment  
+- **Deploy your own online version** of the component library (fully open-source)  
+
+Start Storybook locally
+```bash
+pnpm storybook
+```
+Build static Storybook for deployment
+```bash
+pnpm build-storybook
 ```
 
 ## Contributing
