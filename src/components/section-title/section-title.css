@@ -1,0 +1,58 @@
+.nakas-section-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nakas-section-title-row {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.nakas-section-title-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nakas-section-title-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: color-mix(in srgb, var(--primary-acent) 15%, transparent);
+    color: var(--primary-acent);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    width: fit-content;
+}
+
+.nakas-section-link-btn {
+    align-items: center;
+    display: inline-flex;
+    background: var(--primary-acent);
+    border-radius: var(--border-radius);
+    color: var(--link-color);
+    flex-shrink: 0;
+    gap: 0.5rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nakas-section-link-btn svg {
+    transition: all 100ms ease;
+}
+
+.nakas-section-link-btn:hover>svg {
+    padding-left: 1px;
+    opacity: 0.9;
+}
+
+.nakas-section-title-btn:hover {
+    opacity: 0.9;
+}

@@ -1,0 +1,63 @@
+.nakas-select-wrapper {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.nakas-select-label {
+    opacity: 0.7;
+    color: var(--primary-color);
+}
+
+.nakas-select-required {
+    color: var(--error-color);
+}
+
+.nakas-select-control {
+    align-items: center;
+    display: flex;
+    margin: unset;
+    padding: 8px !important;
+    position: relative;
+}
+
+.nakas-select {
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 150ms ease;
+}
+
+.nakas-select option {
+    color: var(--primary-color);
+}
+
+.nakas-select-error {
+    border-color: var(--error-block);
+}
+
+.nakas-select-error:focus {
+    border-color: var(--error-block);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--error-block) 20%, transparent);
+}
+
+.nakas-select-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.nakas-select-chevron {
+    position: absolute;
+    right: 0.75rem;
+    pointer-events: none;
+    color: var(--primary-color);
+    opacity: 0.6;
+    flex-shrink: 0;
+}
+
+.nakas-select-error-msg {
+    color: var(--error-block);
+}

@@ -6,7 +6,7 @@ This section outlines which versions of Nakas UI are actively supported with sec
 
 | Version | Supported          |
 | ------- | ----------------- |
-| 0.2.x   | :white_check_mark: |
+| 0.8.x   | :white_check_mark: |
 
 > Note: As Nakas UI is currently in testing, only version 0.2.x is supported. Future releases will expand support.
 

@@ -1,0 +1,21 @@
+.nakas-text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--color-primary-color);
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, var(--color-primary-color) 40%, transparent);
+    text-underline-offset: 4px;
+    transition: all 300ms ease;
+}
+
+.nakas-text-link:hover {
+    text-decoration-color: var(--color-primary-color);
+    text-underline-offset: 2px;
+}
+
+.nakas-text-link:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-primary-color) 40%, transparent);
+    border-radius: 2px;
+}

@@ -1,0 +1,61 @@
+p,
+.nakas-text {
+    font-family: var(--font-family-body);
+}
+
+.nakas-text {
+    max-width: clamp(320px, 90%, 640px);
+}
+
+.nakas-text.w-full {
+    width: 100%;
+    max-width: none;
+}
+
+.nakas-text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.nakas-text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+p,
+.nakas-text-md {
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+.nakas-text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+}
+
+.nakas-text-xl {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+}
+
+@media (min-width: 768px) {
+    .nakas-text-sm {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .nakas-text-md {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+
+    .nakas-text-lg {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+
+    .nakas-text-xl {
+        line-height: 2.25rem;
+    }
+}

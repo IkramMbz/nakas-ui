@@ -1,0 +1,34 @@
+User-agent: *
+Allow: /
+
+# Autoriser explicitement les ressources utilisées pour le rendu
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.woff$
+Allow: /*.woff2$
+Allow: /*.ttf$
+
+# Sitemaps
+Sitemap: https://ui.nakas.fr/sitemap.xml
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Google Image
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.webp$
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+Crawl-delay: 2

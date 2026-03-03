@@ -1,0 +1,26 @@
+.nakas-card {
+    background: var(--nega-bold-color);
+    border: 1px solid color-mix(in srgb, var(--primary-color) 10%, transparent);
+    border-radius: var(--border-radius);
+    box-shadow: inset -4px 4px 4px color-mix(in srgb, var(--primary-color) 2%, transparent);
+    display: flex;
+    gap: 4px;
+    margin: 0 auto;
+    padding: 16px;
+    transition: all 60ms ease;
+    user-select: none;
+}
+
+.nakas-card-skeleton {
+    min-height: 96px;
+    background-color: color-mix(in srgb, var(--primary-color) 8%, transparent);
+    border: none;
+    box-shadow: none;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+}
+
+.nakas-card, .nakas-card-skeleton  {
+    min-width: 180px;
+}

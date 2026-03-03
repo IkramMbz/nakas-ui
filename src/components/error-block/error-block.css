@@ -1,0 +1,12 @@
+.nakas-error-block {
+    max-width: 400px;
+    align-items: center;
+    background: var(--error-background);
+    border: 1px solid var(--error-border);
+    border-radius: var(--border-radius);
+    color: var(--error-color);
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 0.875rem 1rem;
+}

@@ -1,0 +1,20 @@
+@import "./styles.css";
+
+@import "../../components/aurora-background/aurora-background.css";
+@import "../../components/body-text/body-text.css";
+@import "../../components/button/button.css";
+@import "../../components/faq/faq.css";
+@import "../../components/card/card.css";
+@import "../../components/dialog/dialog.css";
+@import "../../components/dropdown/dropdown.css";
+@import "../../components/error-block/error-block.css";
+@import "../../components/heading/heading.css";
+@import "../../components/hr/hr.css";
+@import "../../components/input/input.css";
+@import "../../components/section/section.css";
+@import "../../components/section-title/section-title.css";
+@import "../../components/select/select.css";
+@import "../../components/scroll-to-top/scroll-to-top.css";
+@import "../../components/text-link/text-link.css";
+@import "../../components/toast/toast.css";
+@import "../../components/toggler/toggler.css";

@@ -1,0 +1,43 @@
+.nakas-toggler {
+    background-color: var(--nega-background);
+    cursor: pointer;
+    position: relative;
+    width: 80px;
+    height: 42px;
+    border-radius: var(--border-radius);
+    transition: background-color 200ms ease;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.nakas-toggler-active {
+    background-color: var(--primary-accent);
+}
+
+.nakas-toggler-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.nakas-toggler-thumb {
+    width: 1.5rem;
+    height: 1.5rem;
+    align-items: center;
+    background: white;
+    border-radius: 9999px;
+    color: var(--nega-bold-color);
+    display: flex;
+    justify-content: center;
+    left: 8px;
+    padding: 3px;
+    position: absolute;
+    top: 50%;
+    transition: transform 150ms ease-in-out;
+    transform: translate(0, -50%);
+}
+
+.nakas-toggler-thumb-active {
+    transform: translate(40px, -50%);
+}
