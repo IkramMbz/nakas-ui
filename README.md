@@ -24,8 +24,8 @@ The Nakas UI Suite is structured across multiple repositories to manage each fra
 
 | Repository | Description | Documentation |
 |------------|------------|---------------|
-| **[nakas-ui](https://github.com/IkramMbz/nakas-ui)** | Wrapper and components for React. | [React Docs](https://ui.nakas.fr/react) |
-| **[nakas-ui-svelte](https://github.com/IkramMbz/nakas-ui-svelte)** | Wrapper and components for Svelte. | [Svelte Docs](https://ui.nakas.fr/svelte) |
+| **[nakas-ui](https://github.com/IkramMbz/nakas-ui)** | Wrapper and components for React. | [React Docs](https://ui.nakas.fr/?path=/story/hello-page--main) |
+| **[nakas-ui-svelte](https://github.com/IkramMbz/nakas-ui-svelte)** | Wrapper and components for Svelte. | [Svelte Docs](https://ui.nakas.fr/?path=/story/hello-page--main) |
 
 Each sub-project exposes the same components, adapted to its framework. The API remains consistent for easier multi-framework adoption.
 
