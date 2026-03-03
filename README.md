@@ -1,21 +1,32 @@
 ![](/src/assets/media/img/logo.png)
 
-# Nakas UI
+# Nakas UI by GlitchKids
 
-[![Release v0.2.1](https://img.shields.io/badge/release-v0.2.0-white)](https://github.com/IkramMbz/nakas-ui/blob/main/README.md#installation) [![Nakas Suite](src/assets/media/img/nakas-suite.svg)](https://mbechezi.fr/#nakas-suite) [![License](src/assets/media/img/license-mit.svg)](https://github.com/IkramMbz/nakas-ui/blob/main/LICENSE) [![Node.js](src/assets/media/img/nodejs.svg)](https://nodejs.org/) [![TypeScript](src/assets/media/img/typescript.svg)](https://www.typescriptlang.org/) [![Frontend Next](src/assets/media/img/nextjs.svg)](https://nextjs.org/) [![Frontend React](src/assets/media/img/react.svg)](https://reactjs.org/) [![Design System](src/assets/media/img/design-system.svg)](https://ui.nakas.fr/) [![Accessibility](src/assets/media/img/accessibility.svg)](https://www.w3.org/WAI/)
+[![Release v0.8.0](https://img.shields.io/badge/release-v0.2.0-white)](https://github.com/IkramMbz/nakas-ui/blob/main/README.md#installation) [![Nakas Suite](src/assets/media/img/nakas-suite.svg)](https://mbechezi.fr/#nakas-suite) [![License](src/assets/media/img/license-mit.svg)](https://github.com/IkramMbz/nakas-ui/blob/main/LICENSE) [![Node.js](src/assets/media/img/nodejs.svg)](https://nodejs.org/) [![TypeScript](src/assets/media/img/typescript.svg)](https://www.typescriptlang.org/) [![Frontend Next](src/assets/media/img/nextjs.svg)](https://nextjs.org/) [![Frontend React](src/assets/media/img/react.svg)](https://reactjs.org/) [![Design System](src/assets/media/img/design-system.svg)](https://ui.nakas.fr/) [![Accessibility](src/assets/media/img/accessibility.svg)](https://www.w3.org/WAI/)
 
-**Nakas UI** is a lightweight UI library for building consistent, accessible, and themeable interfaces aligned with the Nakas design system.
+**Nakas UI** is a lightweight UI library for building consistent, accessible, modular, and consistent interfaces aligned with the Nakas design system. The suite supports multiple frameworks: **React** and **Svelte**.
 
 🟣**Note:** Nakas UI is currently in the testing phase and is not yet available on npm. It will be released soon.
 
-For more details, see the full documentation: [https://ui.nakas.fr](https://ui.nakas.fr)
+For full documentation, examples, and installation guides, see: [Nakas UI Documentation](https://ui.nakas.fr)
 
 ## Table of Contents
+- [Projects and Usage](#projects-and-submodules)
 - [Key Features](#key-features)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Projects and Usage
+
+The Nakas UI Suite is structured across multiple repositories to manage each framework separately:  
+
+| Repository | Description | Documentation |
+|------------|------------|---------------|
+| **[nakas-ui](https://github.com/IkramMbz/nakas-ui)** | Wrapper and components for React. | [React Docs](https://ui.nakas.fr/react) |
+| **[nakas-ui-svelte](https://github.com/IkramMbz/nakas-ui-svelte)** | Wrapper and components for Svelte. | [Svelte Docs](https://ui.nakas.fr/svelte) |
+
+Each sub-project exposes the same components, adapted to its framework. The API remains consistent for easier multi-framework adoption.
 
 ## Key Features
 - Reusable and modular UI components  
@@ -44,18 +55,6 @@ npm init -y
 Then install the library directly from GitHub (since it's not yet published on npm):
 ```bash
 npm install https://github.com/IkramMbz/nakas-ui
-```
-
-## Usage
-
-Import components into your React/Next project like:
-
-```tsx
-import { Button } from "nakas-ui";
-
-export default function App() {
-  return <Button>Welcome to Nakas UI</Button>;
-}
 ```
 
 ## Contributing
