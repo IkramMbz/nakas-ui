@@ -9,6 +9,13 @@ export default defineConfig({
       autoInstall: true,
     }),
   ],
-  safelist: ["_nakas-p-xs", "_nakas-p-sm", "_nakas-p-md", "_nakas-p-lg", "_nakas-p-xl"],
+  safelist: [
+    "_nakas-p-xs",
+    "_nakas-p-sm",
+    "_nakas-p-md",
+    "_nakas-p-lg",
+    "_nakas-p-xl",
+    "space-y-4",
+  ],
   transformers: [transformerDirectives()],
 });

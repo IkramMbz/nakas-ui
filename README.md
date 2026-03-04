@@ -11,6 +11,7 @@
 For full documentation, examples, and installation guides, see: [Official Documentation](https://ui.nakas.fr)
 
 ## Table of Contents
+
 - [Projects and Usage](#projects-and-submodules)
 - [Key Features](#key-features)
 - [Installation](#installation)
@@ -20,23 +21,24 @@ For full documentation, examples, and installation guides, see: [Official Docume
 
 ## Projects and Usage
 
-The Nakas UI Suite is structured across multiple repositories to manage each framework separately:  
+The Nakas UI Suite is structured across multiple repositories to manage each framework separately:
 
-| Repository | Description | Documentation |
-|------------|------------|---------------|
-| **[nakas-ui](https://github.com/IkramMbz/nakas-ui)** | Wrapper and components for React. | [React Docs](https://ui.nakas.fr/?path=/story/hello-page--main) |
+| Repository                                                         | Description                        | Documentation                                                    |
+| ------------------------------------------------------------------ | ---------------------------------- | ---------------------------------------------------------------- |
+| **[nakas-ui](https://github.com/IkramMbz/nakas-ui)**               | Wrapper and components for React.  | [React Docs](https://ui.nakas.fr/?path=/story/hello-page--main)  |
 | **[nakas-ui-svelte](https://github.com/IkramMbz/nakas-ui-svelte)** | Wrapper and components for Svelte. | [Svelte Docs](https://ui.nakas.fr/?path=/story/hello-page--main) |
 
 Each sub-project exposes the same components, adapted to its framework. The API remains consistent for easier multi-framework adoption.
 
 ## Key Features
-- Reusable and modular UI components  
-- Consistent, configurable visual themes  
-- Lightweight and customizable  
-- Built for React and TypeScript  
-- Full TypeScript support with type declarations  
-- Code Quality & Linting (ESLint & Prettier tested)  
-- Detailed documentation and examples  
+
+- Reusable and modular UI components
+- Consistent, configurable visual themes
+- Lightweight and customizable
+- Built for React and TypeScript
+- Full TypeScript support with type declarations
+- Code Quality & Linting (ESLint & Prettier tested)
+- Detailed documentation and examples
 
 For more details, see the full documentation: [https://ui.nakas.fr](https://ui.nakas.fr)
 
@@ -44,7 +46,7 @@ For more details, see the full documentation: [https://ui.nakas.fr](https://ui.n
 
 To use Nakas UI in your project, your environment must meet the following minimum requirements:
 
-- **Node.js** ≥ 18 (for full ESM support and modern module resolution)  
+- **Node.js** ≥ 18 (for full ESM support and modern module resolution)
 - **Package Manager:** `pnpm` ≥ 7 (or `npm` / `yarn`, scripts are tested with pnpm)
 
 Initialize your project if you haven't already:
@@ -54,30 +56,35 @@ npm init -y
 ```
 
 Then install the library directly from GitHub (since it's not yet published on npm):
+
 ```bash
-npm install https://github.com/IkramMbz/nakas-ui
+pnpm add -D IkramMbz/nakas-ui#path:/dist/unocss
 ```
 
 ## Storybook
 
-This repository includes the **full Storybook setup**, which documents every component for all supported frameworks (React, Svelte, Vue).  
+This repository includes the **full Storybook setup**, which documents every component for all supported frameworks (React, Svelte, Vue).
 
-Storybook can be used to:  
-- **Visualize components interactively** in a local environment  
-- **Deploy your own online version** of the component library (fully open-source)  
+Storybook can be used to:
+
+- **Visualize components interactively** in a local environment
+- **Deploy your own online version** of the component library (fully open-source)
 
 Start Storybook locally
+
 ```bash
 pnpm storybook
 ```
+
 Build static Storybook for deployment
+
 ```bash
 pnpm build-storybook
 ```
 
 ## Contributing
 
-All components and features are under active development and may change. External contributions are not open at this time, but we plan to welcome community contributions in the future.  
+All components and features are under active development and may change. External contributions are not open at this time, but we plan to welcome community contributions in the future.
 
 ## License
 

@@ -15,8 +15,10 @@ const meta: Meta<BodyTextArgs> = {
       type: "string",
       description: "Text size variant",
       table: { defaultValue: { summary: "md" } },
-      children: "This is body text",
     },
+  },
+  args: {
+    children: "This is body text",
   },
 };
 

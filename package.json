@@ -2,16 +2,16 @@
   "name": "nakas-ui",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy:unocss": "pnpm -F @nakas-ui/unocss build && pnpm deploy -F @nakas-ui/unocss --force ./dist/unocss"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.30.3",
   "devDependencies": {
     "oxfmt": "^0.36.0",
     "oxlint": "^1.51.0"
-  }
+  },
+  "packageManager": "pnpm@10.30.3"
 }
